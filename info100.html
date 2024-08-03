@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>INFO100</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="CSS/styles.css" />
+        <link rel="stylesheet" href="CSS/info100Styles.css" />
+	</head>
+	<body>
+        <div id="note-section">
+            <div class="note">
+            <span class="close" onclick="closeNote()">&times;</span>
+            <p>This is a message in the note section.</p>
+            </div>
+        </div>
+        
+		<!-- header -->
+	    <header class="main-header">
+			<div class="logo-name">
+			<a href="index.html" title="Home" rel="home" >
+				<img class="logo-image" src="Assets/logo.png" alt="Hjem">
+			</a>
+
+			<div class="website-name">
+				<a href="index.html"><span>My Platform</span></a>
+			</div>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Courses</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</nav>
+			<div class="actions">
+				<button class="sign-in">Sign In</button>
+				<button class="sign-up">Sign Up</button>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main>
+            <div class="title">
+				<ul>
+					<li><a href="index.html">&lt;&lt; Back to Courses</a></li>
+				</ul>
+				<div class="title-text">
+					<h1>Introduction to Information Science</h1>
+				</div>
+            </div>
+			<div class="course-text">
+				<h2>Objectives and Content</h2>
+
+				<p>INFO100 will provide a basic introduction to Information and Communication Technology (ICT) and their uses in society.
+					The course will also provide a basic introduction to the problems addressed by information science theories and technologies. 
+					It will also give relevant examples of information science research and research method. The course includes laboratory assignments 
+					that provide basic experience in practical work with ICT tools.</p>
+				
+				<ul>
+					<p>The course briefly covers the following three areas:</p>
+					<li>Basic information and communication technology including computer and software architecture, network and database, information system and user interface.</li>
+					<li>A societal perspective on ICT, issues involving privacy, ethics, vulnerability, security and ICT policy.</li>
+					<li>Examples of information science research, problems addressed by information science and information science research method.</li>
+				</ul>
+	
+				<h2>Learning Outcomes</h2>
+				<p>A student who has completed the course should have the following learning outcomes 
+				defined in terms of knowledge, skills and general competence:</p>
+
+				<h3>Knowledge</h3>
+				<ul>
+					<p>The student will be able to</p>
+					<li>describe the theoretical and technological foundations of information and communication technology.</li>
+					<li>describe the problems being addressed by information science and apply fundamental information science technologies for problem solving.</li>
+					<li>acquire theoretical knowledge of the role of ICT in society.</li>
+				</ul>
+
+				<h3>Skill</h3>
+				<ul>
+					<p>The student will be able to</p>
+					<li>use selected ICT technologies and tools</li>
+					<li>participate in certain practical ICT projects which include web technologies</li>
+					<li>discuss ICT, ICT use and the role of ICT in the society.</li>
+				</ul>
+			</div>
+
+			<div class="course-table">
+				<table>
+					<tr>
+						<th>Field Study</th>
+						<td>IT and Media</td>
+					</tr>
+					<tr>
+						<th>Study Level</th>
+						<td>Bachelor</td>
+					</tr>
+					<tr>
+						<th>Study Program</th>
+						<td>Information Science</td>
+					</tr>
+					<tr>
+						<th>Course Code</th>
+						<td>INFO100</td>
+					</tr>
+					<tr>
+						<th>Level of Difficulty</th>
+						<td>Introduction</td>
+					</tr>
+					<tr>
+						<th>Teaching Language</th>
+						<td>English and Norwegian</td>
+					</tr>
+					<tr>
+						<th>Teaching Semester</th>
+						<td>Autumn</td>
+					</tr>
+					<tr>
+						<th>Online Course</th>
+						<td>Available</td>
+					</tr>
+					<tr>
+						<th>ECTS Credits</th>
+						<td>10 - Only if the course fits in your study program</td>
+					</tr>
+					<tr>
+						<th>Certificate of Completion</th>
+						<td>For External Student upon completion</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="course-diagram">
+				<h2>Overview over Number of Students and External Participants of this Course: </h2>
+				<script id="infogram_0_40ef554c-429a-4474-9d4f-535a3df61638" 
+				title="StudentsTotal" 
+				src="https://e.infogram.com/js/dist/embed.js?yqW" 
+				type="text/javascript">
+				</script>
+				<div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+					<a href="https://infogram.com/40ef554c-429a-4474-9d4f-535a3df61638" 
+					style="color:#989898!important;text-decoration:none!important;" 
+					target="_blank">StudentsTotal</a>
+					<br>
+					<a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
+				</div>
+			</div>
+
+
+			<div class="review">
+				<h2>Reviews by</h2>
+				<select	name="reviewBy">
+					<option value="all">All students</option>
+					<option value="students">Students</option>
+					<option value="teachers">External Participants</option>
+				</select>
+			</div>
+
+			<div class="course-review-container">
+				<div class="slider-container">
+					<label for="courseScore">Course Score:</label>
+					<input type="range" id="courseScore" name="courseScore" min="1" max="10" value="5">
+					<span id="courseScoreValue">5</span>
+
+					<label for="usefulness">Usefulness:</label>
+					<input type="range" id="usefulness" name="usefulness" min="1" max="10" value="5">
+					<span id="usefulnessValue">5</span>
+
+					<label for="difficultyLevel">Difficulty Level:</label>
+					<input type="range" id="difficultyLevel" name="difficultyLevel" min="1" max="10" value="5">
+						<span id="difficultyLevelValue">5</span>
+				</div>
+
+				<div class="feedback">
+					<div class="ratings">
+						<p>Course Score: 8/10</p>
+						<p>Usefulness: 9/10</p>
+						<p>Difficulty: 5/10</p>
+					</div>
+					<blockquote>"This course was quite comprehensive and the examples were very practical."</blockquote>
+				</div>
+				<hr>
+				<div class="feedback">
+					<div class="ratings">
+						<p>Course Score: 7/10</p>
+						<p>Usefulness: 8/10</p>
+						<p>Difficulty: 6/10</p>
+					</div>
+					<blockquote>"Appreciated the depth of the content, though some topics were challenging."</blockquote>
+				</div>
+				<hr>
+
+				<div class="course-pagination">
+					<ul>
+						<li><a  href="#" title="go to page" target="_blank">1</a></li>
+						<li><a  href="#" title="go to page" target="_blank"><u>2</u></a></li>
+						<li><a  href="#" title="go to page" target="_blank">3</a></li>
+						<li><a  href="#" title="go to page" target="_blank">4</a></li>
+						<li disabled><span >...</span></li>
+						<li><a  href="#" title="go to page" target="_blank">Next</a></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+
+<!-- footer -->
+		<footer>
+				<p>&copy; 2024 My Platform</p>
+		</footer>
+
+        <script src="JS/scripts.js"></script>
+	</body>
+</html>
+
+
+

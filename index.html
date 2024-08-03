@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>My Platform</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="CSS/styles.css" />
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+	</head>
+	<body>
+		  <!-- header -->
+	    <header class="main-header">
+			<div class="logo-name">
+				<a href="index.html" title="Home" rel="home" >
+				<img class="logo-image" src="Assets/logo.png" alt="uib and hvl logo">
+				</a>
+
+				<div class="website-name">
+					<a href="index.html"><span>My Platform</span></a>
+				</div>
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Courses</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</nav>
+			<div class="actions">
+				<button class="sign-in">Sign In</button>
+				<button class="sign-up">Sign Up</button>
+			</div>
+		</header>
+
+		<!-- main -->
+		<!-- search -->
+		<!-- filter -->
+		<!-- results -->
+		<main>
+			<div class="search">
+				<form class="search-form" action="#" method="get" accept-charset="utf-8" id="search-filter-form" onsubmit="searchByTitle(event)">
+					<label for="course-search">Find Courses</label>
+					<div class="search-bar">
+						<input type="search" list="courses" id="course-search" name="query" placeholder="Search courses ...">
+						<!-- datalist to choose from -->
+						<datalist id="courses">
+							<option value="Advanced Materials Science"></option>
+							<option value="Advances in Quantum Computing"></option>
+							<option value="American and English Literature"></option>
+							<option value="Applied Artificial Intelligence"></option>
+							<option value="Contemporary American Literature"></option>
+							<option value="Contemporary European History"></option>
+							<option value="Digital Marketing Strategies"></option>
+							<option value="Global Health Challenges"></option>
+							<option value="Global Health Initiatives"></option>
+							<option value="Introduction to Artificial Intelligence"></option>
+							<option value="Introduction to Quantum Computing"></option>
+							<option value="Materials Science and 3D Printing"></option>
+							<option value="Modern European History"></option>
+							<option value="Modern Urban Planning"></option>
+							<option value="Nutritional Health Impacts and Dietetics"></option>
+							<option value="Nutritional Science and Dietetics"></option>
+							<option value="Organisational Management"></option>
+							<option value="Principles of Sustainable Design"></option>
+							<option value="Sustainable Urban Planning"></option>
+						</datalist>
+						<button type="submit"><img class="search-icon" src="Assets/search-icon.png" alt="Search"></button>
+					</div>
+				</form>
+				
+			</div>
+
+			<div class="filter">
+				<div class="field-of-study">
+					<select name="studyField" title="Field of Study" form="search-filter-form">
+						<option value="all">Field Of Study</option>
+						<option value="american-studies">American Studies</option>
+						<option value="applied-physics">Applied Physics</option>
+						<option value="architecture">Architecture</option>
+						<option value="artificial-intelligence">Artificial Intelligence</option>
+						<option value="business-administration">Business Administration</option>
+						<option value="business-management">Business Management</option>
+						<option value="chemistry">Chemistry</option>
+						<option value="computer-science">Computer Science</option>
+						<option value="cultural-studies">Cultural Studies</option>
+						<option value="data-science">Data Science</option>
+						<option value="dietetics">Dietetics</option>
+						<option value="digital-communication">Digital Communication</option>
+						<option value="e-commerce">E-Commerce</option>
+						<option value="economics">Economics</option>
+						<option value="engineering">Engineering</option>
+						<option value="environmental-planning">Environmental Planning</option>
+						<option value="environmental-science">Environmental Science</option>
+						<option value="european-studies">European Studies</option>
+						<option value="finance">Finance</option>
+						<option value="health-sciences">Health Sciences</option>
+						<option value="health-studies">Health Studies</option>
+						<option value="healthcare">Healthcare</option>
+						<option value="healthcare-management">Healthcare Management</option>
+						<option value="history">History</option>
+						<option value="information-technology">Information Technology</option>
+						<option value="landscape-design">Landscape Design</option>
+						<option value="literature">Literature</option>
+						<option value="marketing">Marketing</option>
+						<option value="material-science">Material Science</option>
+						<option value="mechanical-engineering">Mechanical Engineering</option>
+						<option value="nursing">Nursing</option>
+						<option value="nutrition">Nutrition</option>
+						<option value="physics">Physics</option>
+						<option value="political-science">Political Science</option>
+						<option value="public-administration">Public Administration</option>
+						<option value="public-health">Public Health</option>
+						<option value="public-policy">Public Policy</option>
+						<option value="robotics">Robotics</option>
+						<option value="technology-management">Technology Management</option>
+						<option value="urban-planning">Urban Planning</option>
+						<option value="urban-studies">Urban Studies</option>												
+					</select>
+					
+				</div>
+				<div class="education-level"> 
+					<select name="education-level" title="Education Level" form="search-filter-form">
+						<option value="all">Education Level</option>
+						<option value="bachelor">Bachelor</option>
+						<option value="master">Master</option>
+						<option value="professional">Professional</option>
+					</select>
+				</div>
+				<div class="study-program">
+					<select name="type" title="Study Program" form="search-filter-form">
+						<option value="all">Study Programs</option>
+						<option value="ba business-administration">BA Business Administration</option>
+						<option value="ba economics">BA Economics</option>
+						<option value="ab english">BA English</option>
+						<option value="ba healthcare-management">BA Healthcare Management</option>
+						<option value="ba history">BA History</option>
+						<option value="ba international-relations">BA International Relations</option>
+						<option value="ba literature">BA Literature</option>
+						<option value="ba urban-studies">BA Urban Studies</option>
+						<option value="bsc applied-mathematics">BSc Applied Mathematics</option>
+						<option value="bsc applied-physics">BSc Applied Physics</option>
+						<option value="bsc architecture">BSc Architecture</option>
+						<option value="bsc chemistry">BSc Chemistry</option>
+						<option value="bsc computer-science">BSc Computer Science</option>
+						<option value="bsc data-science">BSc Data Science</option>
+						<option value="bsc digital-communication">BSc Digital Communication</option>
+						<option value="bsc engineering">BSc Engineering</option>
+						<option value="bsc environmental-science">BSc Environmental Science</option>
+						<option value="bsc health-sciences">BSc Health Sciences</option>
+						<option value="bsc health-studies">BSc Health Studies</option>
+						<option value="bsc physics">BSc Physics</option>
+						<option value="bsc public-health">BSc Public Health</option>
+						<option value="ma american-studies">MA American Studies</option>
+						<option value="ma cultural-studies">MA Cultural Studies</option>
+						<option value="ma environmental-planning">MA Environmental Planning</option>
+						<option value="ma european-studies">MA European Studies</option>
+						<option value="ma global-health">MA Global Health</option>
+						<option value="ma history">MA History</option>
+						<option value="ma marketing">MA Marketing</option>
+						<option value="msc artificial-intelligence">MSc Artificial Intelligence</option>
+						<option value="msc business-analytics">MSc Business Analytics</option>
+						<option value="msc computer-science">MSc Computer Science</option>
+						<option value="msc dietetics">MSc Dietetics</option>
+						<option value="msc ecology">MSc Ecology</option>
+						<option value="msc engineering">MSc Engineering</option>
+						<option value="msc financial-management">MSc Financial Management</option>
+						<option value="msc information-technology">MSc Information Technology</option>
+						<option value="msc material-science">MSc Material Science</option>
+						<option value="msc mechanical-engineering">MSc Mechanical Engineering</option>
+						<option value="msc nutrition">MSc Nutrition</option>
+						<option value="msc public-health">MSc Public Health</option>
+						<option value="msc robotics">MSc Robotics</option>
+						<option value="msc urban-development">MSc Urban Development</option>
+						<option value="msc urban-planning">MSc Urban Planning</option>
+					</select>					
+				</div>
+				<div class="level-difficulty" >
+					<select name="level-of-difficulty" title="Level of Difficulty" form="search-filter-form" disabled>
+						<option value="all">Level of difficulty</option>
+						<option value="beginner">Beginner: 1 to 3</option>
+						<option value="intermediate">Intermediate: 4 to 7</option>
+						<option value="advanced">Advanced: 8 to 10</option>
+					</select>
+				</div>
+
+				<!-- Teaching language is disabled because json data does not provide data for this option
+					since data is in english so i choose to keep only English language as option
+					but it will not be considered in the filter-javascript code -->
+				<div class="teaching-language">
+					<select name="teachingLanguage" title="Teaching Language" form="search-filter-form" disabled>
+						<option value="all">Teaching Language</option>
+						<option value="norwegian" disabled>Norwegian</option>
+						<option value="english">English</option>
+					</select>
+				</div>
+				<!-- attendence disabled because json data does not provide data for this option-->
+				<div class="attendence">
+					<select name="attendence" title="Attendence" form="search-filter-form" disabled>
+						<option value="all">Attendence</option>
+						<option value="onCampus" >On campus</option>
+						<option value="online" >Online</option>
+					</select>
+				</div>
+				<div class="buttonDiv" form="search-filter-form">
+					<button id="applyFilter" onclick="fetchCourseData()">Search</button>
+					<button id="clearFilter" onclick="clearFilters()">Clear Filters</button>
+				</div>
+
+				<!-- checkboxes for student and external participant -->
+				<div class="checkboxes">
+					<input type="checkbox" id="checkbox1" name="student" value="studenUibHvl" form="search-filter-form">
+					<label for="checkbox1">Student (Uib &amp; Hvl)</label>
+					<br>
+					<input type="checkbox" id="checkbox2" name="externalParticipant" value="ExternalParticipant" form="search-filter-form">
+					<label for="checkbox2">External Participant</label>
+				</div>
+			</div>
+
+			<!-- results section to display course data-->
+			<div class="results"> 
+			<p id="resultMessage" style="text-align: center;font-size: small;">Results will be displayed here</p>
+			</div>
+		</main>
+
+<!-- footer -->
+		<footer>
+				<p>&copy; 2024 My Platform</p>
+		</footer>
+
+        <script src="JS/scripts.js"></script>
+	</body>
+</html>
+
+
+
